@@ -1,0 +1,52 @@
+/* Shared iOS Navbar Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f2f2f7; /* iOS Light Gray */
+            color: #1c1c1e;
+            margin: 0;
+            padding-top: 100px; /* Space for floating nav */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ios-navbar {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        .nav-list { display: flex; list-style: none; gap: 25px; margin: 0; padding: 0; }
+        .nav-link { text-decoration: none; color: #333; font-weight: 500; position: relative; }
+        
+        /* About Page Content Layout */
+        .content-container {
+            max-width: 800px;
+            width: 90%;
+            background: white;
+            padding: 40px;
+            border-radius: 30px; /* iOS-style curvature */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+        }
+
+        h1 { font-size: 2.5rem; letter-spacing: -0.5px; }
+        .placeholder-image {
+            width: 100%;
+            height: 300px;
+            background: #e5e5ea;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8e8e93;
+            margin: 20px 0;
+        }

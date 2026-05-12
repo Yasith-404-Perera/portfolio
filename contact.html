@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Yasith Perera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav class="ios-navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+    <section class="section" style="padding-top: 140px;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Have a question, a project idea, or just want to say hello? I'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info reveal">
+            <h2>Let's <span style="background:linear-gradient(135deg,var(--secondary),var(--primary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Connect</span></h2>
+            <p>Whether you have a project in mind, a collaboration opportunity, or just want to chat about technology and design, feel free to reach out. I'm always open to new ideas and interesting conversations.</p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">&#x2709;</div>
+                <div class="contact-detail-text">
+                  <h4>Email</h4>
+                  <p>yasithp08@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">&#x1F4DE;</div>
+                <div class="contact-detail-text">
+                  <h4>Phone</h4>
+                  <p>071 306 2201</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">&#x1F4CD;</div>
+                <div class="contact-detail-text">
+                  <h4>Location</h4>
+                  <p>Gampaha, Sri Lanka</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" target="_blank" class="social-link" title="GitHub">&#x1F5A5;</a>
+              <a href="#" target="_blank" class="social-link" title="LinkedIn">&#x1F464;</a>
+              <a href="#" target="_blank" class="social-link" title="Twitter / X">&#x1D54F;</a>
+              <a href="#" target="_blank" class="social-link" title="Instagram">&#x1F4F7;</a>
+            </div>
+          </div>
+
+          <div class="glass-card contact-form-wrapper reveal reveal-d1">
+            <form class="contact-form" action="mailto:yasithp08@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What is this about?">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                Send Message
+                <span>&rarr;</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Yasith Perera. Built with curiosity.</p>
+    </footer>
+  </div>
+
+  <script src="../scripts/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

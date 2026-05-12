@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work | Yasith Perera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav class="ios-navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+    <section class="section" style="padding-top: 140px;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">My Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">A selection of things I have built, designed, and contributed to.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- SGDV Website -->
+          <div class="project-card glass-card reveal">
+            <div class="project-card-image">
+              <span class="overlay-icon">&#x1F3EB;</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-tag">Web Development</div>
+              <h3 class="project-card-title">SGDV Official Website</h3>
+              <p class="project-card-desc">
+                A fully responsive official website for Sri Gunarathana Dharma Vidyalaya, built to provide students,
+                parents, and staff with easy access to school information, announcements, and resources.
+              </p>
+              <a href="https://yasith-404-perera.github.io/sgdv-website/" target="_blank" class="project-card-link">
+                Visit Site &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Maths Study Guide -->
+          <div class="project-card glass-card reveal reveal-d1">
+            <div class="project-card-image">
+              <span class="overlay-icon">&#x1F4D0;</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-tag">Educational Resource</div>
+              <h3 class="project-card-title">Maths Checkpoint Study Guide</h3>
+              <p class="project-card-desc">
+                A comprehensive digital study guide designed to help Cambridge Lower Secondary students prepare for
+                their Checkpoint Mathematics examination, featuring clear explanations and practice problems.
+              </p>
+              <a href="https://yasith-404-perera.github.io/maths-checkpoint-study-guide/" target="_blank" class="project-card-link">
+                Visit Site &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Science Study Guide -->
+          <div class="project-card glass-card reveal reveal-d2">
+            <div class="project-card-image">
+              <span class="overlay-icon">&#x1F52C;</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-tag">Educational Resource</div>
+              <h3 class="project-card-title">Science Checkpoint Study Guide</h3>
+              <p class="project-card-desc">
+                An interactive study resource covering key concepts in the Cambridge Lower Secondary Science curriculum,
+                created to make complex scientific topics accessible and engaging for students.
+              </p>
+              <a href="https://yasith-404-perera.github.io/science-checkpoint-study-guide/" target="_blank" class="project-card-link">
+                Visit Site &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Placeholder for future project -->
+          <div class="project-card glass-card reveal reveal-d3">
+            <div class="project-card-image">
+              <span class="overlay-icon">&#x1F4A1;</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-tag">Coming Soon</div>
+              <h3 class="project-card-title">[Future Project Title]</h3>
+              <p class="project-card-desc">
+                [Describe what you are planning to build next. This is a placeholder for your next project idea.]
+              </p>
+              <span class="project-card-link" style="color: var(--text-muted);">In Development &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Yasith Perera. Built with curiosity.</p>
+    </footer>
+  </div>
+
+  <script src="../scripts/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
